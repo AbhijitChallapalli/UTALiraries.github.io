@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vertical Menu Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .content {
+      display: flex; /* Add flexbox */
+      flex-wrap: wrap; /* Enable wrapping */
+      gap: 20px; /* Add gap between cards */
+    }
+    .card {
+      flex: 1 1 calc(50% - 20px); /* Set card width to 50% minus the gap */
+      display: flex;
+      flex-direction: column;
+    }
+    .card-img-top {
+      height: 200px; /* Adjust the height of the image */
+      object-fit: cover; /* Maintain the aspect ratio of the image */
+    }
+    .card-body {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Open Access Publishing: Create an OA Journal</h1>
+      <div>
+        <p>UTA Libraries</p>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="https://libraries.uta.edu/sites/default/files/styles/2_grid_width/public/2019-09/mavs-open-press2.png?itok=RZki9ANk" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MAVS OPEN PRESS</h5>
+          <p class="card-text">UTA Libraries Mavs Open Press offers a variety of services to assist UTA faculty members in hosting their own OA journals</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://cuadernavia.journal.library.uta.edu/public/journals/1/pageHeaderLogoImage_en_US.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">A digital journal that publishes poetry, essays, short stories, and interviews, as well as plastic and audiovisual arts.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

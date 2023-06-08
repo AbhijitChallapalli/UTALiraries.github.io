@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: blue; /* Change the text color to blue */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu {
+  width: 200px;
+  background-color: #0e6387;
+  color: #fff;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #0995c6;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu li a:hover {
+  background-color: #0995c6;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+h1 {
+  color: blue; /* Change the color of h1 and h2 headings to blue */
+}
+
+p{
+  color: blue
+}
+.content {
+  display: flex; /* Add flexbox */
+  flex-wrap: wrap; /* Enable wrapping */
+  gap: 20px; /* Add gap between cards */
+}
+.card {
+  flex: 0 0 calc(50% - 20px); /* Set card width to 50% minus the gap */
+}
